@@ -35,7 +35,11 @@ public abstract class CommandFactory {
                 return new GetMostUsedSaberColor();
             case "print":
                 return new Print();
+            case "remove_jedi":
+                return new RemoveJedi();
+            default:
+                System.out.println("Bad command. Try again or use help.");
+                return null;
         }
-        return null;
     }
 }
