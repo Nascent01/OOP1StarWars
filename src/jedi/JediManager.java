@@ -46,9 +46,11 @@ public class JediManager {
                 jedi.add(new Jedi(givenName, rank, Integer.parseInt(arr[3]), color, Double.parseDouble(arr[5]),
                         new Planet(givenPlanet)));
                 Universe.getInstance().setJediPopulation(jedi);
+                System.out.println("New Jedi created.");
             }
         }
     }
+
     public static void removeJedi(String[] args) {
         HashSet<Jedi> jedi = Universe.getInstance().getJediPopulation();
         String givenName = args[0];
