@@ -7,6 +7,8 @@ public abstract class CommandFactory {
         switch (command.toLowerCase()) {
             case "add_planet":
                 return new AddPlanet();
+            case "create_jedi":
+                return new CreateJedi();
             case "open":
                 return new Open();
             case "save":
