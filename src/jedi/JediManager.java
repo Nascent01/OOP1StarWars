@@ -60,9 +60,9 @@ public class JediManager {
                 .findAny();
         if (foundJedi.isPresent()) {
             Universe.getInstance().getJediPopulation().remove(foundJedi.get());
-            System.out.println("The Jedi" + givenName + "has been removed.");
+            System.out.println("The Jedi " + givenName + " has been removed.");
         } else {
-            System.out.println("The jedi " + givenName + "has not been found");
+            System.out.println("The jedi " + givenName + " has not been found");
         }
     }
 
