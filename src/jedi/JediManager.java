@@ -39,10 +39,9 @@ public class JediManager {
                     .filter(existingJedi -> existingJedi.getPlanet().getName().equalsIgnoreCase(givenPlanet))
                     .filter(existingJedi -> existingJedi.getName().equalsIgnoreCase(givenName))
                     .findAny();
-            if(foundJedi.isPresent()){
+            if (foundJedi.isPresent()) {
                 System.out.println("There already exists such a jedi on this planet");
-            }
-            else {
+            } else {
                 jedi.add(new Jedi(givenName, rank, Integer.parseInt(arr[3]), color, Double.parseDouble(arr[5]),
                         new Planet(givenPlanet)));
                 Universe.getInstance().setJediPopulation(jedi);
@@ -59,11 +58,10 @@ public class JediManager {
                 .filter(jediToRemove -> jediToRemove.getName().equalsIgnoreCase(givenName))
                 .filter(jediToRemove -> jediToRemove.getPlanet().getName().equalsIgnoreCase(givenPlanet))
                 .findAny();
-        if(foundJedi.isPresent()){
+        if (foundJedi.isPresent()) {
             Universe.getInstance().getJediPopulation().remove(foundJedi.get());
             System.out.println("The Jedi" + givenName + "has been removed.");
-        }
-        else{
+        } else {
             System.out.println("The jedi " + givenName + "has not been found");
         }
     }
@@ -72,11 +70,10 @@ public class JediManager {
         HashSet<Jedi> jedis = Universe.getInstance().getJediPopulation();
         String name = args[0];
         Optional<Jedi> foundJedi = jedis.stream().filter(jedi -> jedi.getName().equalsIgnoreCase(name)).findAny();
-        if(!foundJedi.isPresent()){
+        if (!foundJedi.isPresent()) {
             System.out.println("No Jedi with the name " + name + " was found.");
-        }
-        else {
-            if(foundJedi.get().getRank().equals(JediRank.YOUNGLING)){
+        } else {
+            if (foundJedi.get().getRank().equals(JediRank.YOUNGLING)) {
                 System.out.println(name + " is already at the lowest rank");
             } else {
                 Jedi jedi = foundJedi.get();
@@ -93,11 +90,10 @@ public class JediManager {
         HashSet<Jedi> jedis = Universe.getInstance().getJediPopulation();
         String name = args[0];
         Optional<Jedi> foundJedi = jedis.stream().filter(jedi -> jedi.getName().equalsIgnoreCase(name)).findAny();
-        if(!foundJedi.isPresent()){
+        if (!foundJedi.isPresent()) {
             System.out.println("No Jedi with the name " + name + " was found.");
-        }
-        else {
-            if(foundJedi.get().getRank().equals(JediRank.GRAND_MASTER)){
+        } else {
+            if (foundJedi.get().getRank().equals(JediRank.GRAND_MASTER)) {
                 System.out.println(name + " is already at the highest rank");
             } else {
                 Jedi jedi = foundJedi.get();
@@ -113,17 +109,17 @@ public class JediManager {
     public static void getStrongestJedi(String[] args) {
         HashSet<Jedi> jedis = Universe.getInstance().getJediPopulation();
         String planet = args[0];
-        if(!PlanetManager.planetExist(planet)){
+        if (!PlanetManager.planetExist(planet)) {
             System.out.println("No such planet");
-        }else {
+        } else {
             Optional<Jedi> foundStrongestJedi = jedis.stream()
                     .filter(jedi -> jedi.getPlanet().getName().equalsIgnoreCase(planet))
                     .max(Comparator.comparing(Jedi::getStrength));
-            if(foundStrongestJedi.isPresent()){
+            if (foundStrongestJedi.isPresent()) {
                 Jedi strongestJedi = foundStrongestJedi.get();
-                System.out.println("The strongest on this planet is : " + strongestJedi.getName()
-                        + " with the strength of : " + strongestJedi.getStrength());
-            }else {
+                System.out.println("The strongest on this planet is: " + strongestJedi.getName()
+                        + " with the strength of: " + strongestJedi.getStrength());
+            } else {
                 System.out.println("There are no Jedi on this planet");
             }
         }
@@ -133,9 +129,9 @@ public class JediManager {
         HashSet<Jedi> jedis = Universe.getInstance().getJediPopulation();
         String planet = args[0];
         String rank = args[1];
-        if(!PlanetManager.planetExist(planet)){
+        if (!PlanetManager.planetExist(planet)) {
             System.out.println("No such planet");
-        }else {
+        } else {
             List<Jedi> foundYoungestJedis = jedis.stream()
                     .filter(jedi -> jedi.getPlanet().getName().equalsIgnoreCase(planet))
                     .filter(jedi -> jedi.getRank().getRankName().equalsIgnoreCase(rank))
@@ -147,9 +143,9 @@ public class JediManager {
                                 .sorted(Comparator.comparing(Jedi::getName))
                                 .collect(Collectors.toList());
                     }));
-            if(foundYoungestJedis.isEmpty()){
+            if (foundYoungestJedis.isEmpty()) {
                 System.out.println("No jedi on this planet");
-            }else{
+            } else {
                 System.out.println("Youngest Jedi on the planet:");
                 PlanetManager.getJediInfo(foundYoungestJedis);
             }
@@ -160,7 +156,7 @@ public class JediManager {
         HashSet<Jedi> jedis = Universe.getInstance().getJediPopulation();
         for (Jedi jedi : jedis) {
             if (jedi.getName().equalsIgnoreCase(args[0])) {
-                System.out.println("Jedi Name: "+ jedi.getName());
+                System.out.println("Jedi Name: " + jedi.getName());
                 System.out.println("Jedi Age: " + jedi.getAge());
                 System.out.println("Jedi Rank:" + jedi.getRank().getRankName());
                 System.out.println("Jedi Strength:" + jedi.getStrength());
@@ -169,7 +165,7 @@ public class JediManager {
         }
     }
 
-    public static List<Jedi> getAllJediByPlanet(String planetName){
+    public static List<Jedi> getAllJediByPlanet(String planetName) {
         HashSet<Jedi> jedi = Universe.getInstance().getJediPopulation();
         return jedi.stream()
                 .filter(jedi1 -> jedi1.getPlanet().getName().equalsIgnoreCase(planetName))
@@ -186,7 +182,7 @@ public class JediManager {
         long green = jedis.stream()
                 .filter(jedi -> jedi.getPlanet().getName().equalsIgnoreCase(planetName))
                 .filter(jedi -> jedi.getSaberColor().equals(JediLightSaberColor.Green)).count();
-        long blue =  jedis.stream()
+        long blue = jedis.stream()
                 .filter(jedi -> jedi.getPlanet().getName().equalsIgnoreCase(planetName))
                 .filter(jedi -> jedi.getSaberColor().equals(JediLightSaberColor.Blue)).count();
         long yellow = jedis.stream()
@@ -211,29 +207,29 @@ public class JediManager {
         String saberColor = "No available color on this planet with rank GRAND MASTER";
 
         Map<JediLightSaberColor, Long> saberJediRelation = new HashMap<>();
-        for(Jedi jedi: jedis){
-            if(jedi.getSaberColor().equals(JediLightSaberColor.Green) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+        for (Jedi jedi : jedis) {
+            if (jedi.getSaberColor().equals(JediLightSaberColor.Green) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.Green, green);
             }
-            if(jedi.getSaberColor().equals(JediLightSaberColor.Blue) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+            if (jedi.getSaberColor().equals(JediLightSaberColor.Blue) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.Blue, blue);
             }
-            if(jedi.getSaberColor().equals(JediLightSaberColor.Yellow) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+            if (jedi.getSaberColor().equals(JediLightSaberColor.Yellow) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.Yellow, yellow);
             }
-            if(jedi.getSaberColor().equals(JediLightSaberColor.Purple) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+            if (jedi.getSaberColor().equals(JediLightSaberColor.Purple) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.Purple, purple);
             }
-            if(jedi.getSaberColor().equals(JediLightSaberColor.Red) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+            if (jedi.getSaberColor().equals(JediLightSaberColor.Red) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.Red, red);
             }
-            if(jedi.getSaberColor().equals(JediLightSaberColor.Cyan) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+            if (jedi.getSaberColor().equals(JediLightSaberColor.Cyan) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.Cyan, cyan);
             }
-            if(jedi.getSaberColor().equals(JediLightSaberColor.White) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+            if (jedi.getSaberColor().equals(JediLightSaberColor.White) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.White, white);
             }
-            if(jedi.getSaberColor().equals(JediLightSaberColor.Orange) && jedi.getRank().equals(JediRank.GRAND_MASTER)){
+            if (jedi.getSaberColor().equals(JediLightSaberColor.Orange) && jedi.getRank().equals(JediRank.GRAND_MASTER)) {
                 saberJediRelation.put(JediLightSaberColor.Orange, orange);
             }
         }
@@ -242,12 +238,13 @@ public class JediManager {
                 .stream()
                 .max(Comparator.comparingLong(Enum::ordinal));
 
-        if(color.isPresent()){
+        if (color.isPresent()) {
             saberColor = color.get().name();
         }
 
         System.out.println("Most used saber color on " + planetName + " is: " + saberColor);
     }
+
     public static void getMostUsedSaberColorWithRank(String[] args) {
 
         HashSet<Jedi> jedis = Universe.getInstance().getJediPopulation();
