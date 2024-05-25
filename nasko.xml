@@ -1,0 +1,29 @@
+<Universe>
+    <Planets>
+        <Planet>
+            <Name></Name>
+        </Planet>
+        <Planet>
+            <Name>Test</Name>
+        </Planet>
+        <Planet>
+            <Name>Nasko</Name>
+        </Planet>
+        <Planet>
+            <Name></Name>
+        </Planet>
+        <Planet>
+            <Name></Name>
+        </Planet>
+    </Planets>
+    <JediPopulation>
+        <Jedi>
+            <Name>Druk</Name>
+            <Rank>KNIGHT</Rank>
+            <Age>21</Age>
+            <SaberColor>Green</SaberColor>
+            <Strength>9999.0</Strength>
+            <Planet>Nasko</Planet>
+        </Jedi>
+    </JediPopulation>
+</Universe>
