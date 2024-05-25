@@ -246,7 +246,7 @@ public class JediManager {
             saberColor = color.get().name();
         }
 
-        System.out.println("Most used saber color on" + planetName + "is: " + saberColor);
+        System.out.println("Most used saber color on " + planetName + " is: " + saberColor);
     }
     public static void getMostUsedSaberColorWithRank(String[] args) {
 

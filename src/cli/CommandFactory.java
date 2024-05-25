@@ -23,6 +23,8 @@ public abstract class CommandFactory {
                 return new Close();
             case "exit":
                 return new Exit();
+            case "get_most_used_saber_color":
+                return new GetMostUsedSaberColor();
             case "print":
                 return new Print();
         }
