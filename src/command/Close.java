@@ -10,7 +10,7 @@ public class Close implements Command {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("Open file first!");
         } else if (args.length != 1) {
-            System.out.println("Usage: close file");
+            System.out.println("Usage: close <file.xml>");
         } else {
             Universe.getInstance().getPlanets().clear();
             Universe.getInstance().getJediPopulation().clear();
