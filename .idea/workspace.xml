@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3758295-e5fb-4c58-a989-8a7b0ffcbafd" name="Changes" comment="Add case for promoting jedi and create class PromoteJedi, add case for planet_name and create class PlanetName and fix PlanetManager error">
+    <list default="true" id="b3758295-e5fb-4c58-a989-8a7b0ffcbafd" name="Changes" comment="Add .idea to .gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cli/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli/CommandFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +46,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Shell.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/java projects/OOP1StarWars/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Shell.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/java projects/OOP1StarWars/src/Main.java",
+    "settings.editor.selected.configurable": "project.scopes",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -81,7 +81,8 @@
       <updated>1716562399127</updated>
       <workItem from="1716562400291" duration="7507000" />
       <workItem from="1716615361367" duration="12270000" />
-      <workItem from="1716644430503" duration="2996000" />
+      <workItem from="1716644430503" duration="3903000" />
+      <workItem from="1716663212010" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project OOP1Star Wars">
       <option name="closed" value="true" />
@@ -395,18 +396,53 @@
       <option name="project" value="LOCAL" />
       <updated>1716647293854</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Fix bug with wrong amount of arguments in Close Save Exit">
+      <option name="closed" value="true" />
+      <created>1716647794390</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716647794390</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Refactor JediManager">
+      <option name="closed" value="true" />
+      <created>1716647849456</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1716647849456</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Add case for removing jedi and create class RemoveJedi">
+      <option name="closed" value="true" />
+      <created>1716647877151</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1716647877151</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Update .idea files">
+      <option name="closed" value="true" />
+      <created>1716647908638</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1716647908638</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add .idea to .gitignore">
+      <option name="closed" value="true" />
+      <created>1716663872678</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1716663872678</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Saveas class implementing Command interface" />
-    <MESSAGE value="Add more case handling in CommandFactory class" />
-    <MESSAGE value="Change logic of command to handle empty inputs and more than needed length args" />
-    <MESSAGE value="Import missing files and methods in PlanetManager and Universe classes" />
-    <MESSAGE value="Fix Shell error&#10;executing only commands equal to null" />
     <MESSAGE value="Add methods for removing, demoting, promoting, getStrongest, getYoungest, printInfo, getAllByPlanet, getMostUsedSaberColor, getMostUsedSaberColorWithRank jedis in JediManager" />
     <MESSAGE value="Create XmlRead and XmlWrite for handling read and write functionality with xml files" />
     <MESSAGE value="Create JediHelper class" />
@@ -427,6 +463,11 @@
     <MESSAGE value="Add case for get_strongest_jedi in CommandFactory and create class GetStrongestJedi" />
     <MESSAGE value="Add cas for getting youngest jedi from a planet and create GetYoungestJedi class, refactor PlanetManager class" />
     <MESSAGE value="Add case for promoting jedi and create class PromoteJedi, add case for planet_name and create class PlanetName and fix PlanetManager error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add case for promoting jedi and create class PromoteJedi, add case for planet_name and create class PlanetName and fix PlanetManager error" />
+    <MESSAGE value="Fix bug with wrong amount of arguments in Close Save Exit" />
+    <MESSAGE value="Refactor JediManager" />
+    <MESSAGE value="Add case for removing jedi and create class RemoveJedi" />
+    <MESSAGE value="Update .idea files" />
+    <MESSAGE value="Add .idea to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .idea to .gitignore" />
   </component>
 </project>
