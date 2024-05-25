@@ -9,7 +9,7 @@ public class Exit implements Command {
     public void execute(String[] args) throws Exception {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("Open file first!");
-        } else if (args.length != 1) {
+        } else if (args.length != 0) {
             System.out.println("Usage: exit the app");
         } else {
             System.out.println("Exiting the app...");

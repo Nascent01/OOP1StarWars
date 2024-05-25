@@ -14,7 +14,7 @@ public class Save implements Command {
     public void execute(String[] args) throws IOException, ParserConfigurationException, TransformerException {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("You must open a file first");
-        } else if (args.length != 1) {
+        } else if (args.length != 0) {
             System.out.println("Usage: save all changes in currently opened file");
         } else {
             Universe universe = Universe.getInstance();

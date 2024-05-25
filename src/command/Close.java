@@ -9,7 +9,7 @@ public class Close implements Command {
     public void execute(String[] args) throws Exception {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("Open file first!");
-        } else if (args.length != 1) {
+        } else if (args.length != 0) {
             System.out.println("Usage: close <file.xml>");
         } else {
             Universe.getInstance().getPlanets().clear();
