@@ -24,7 +24,7 @@ public class Shell {
                 commandArgs = new String[]{""};
             }
             Command command = CommandFactory.receiveCommand(commandName);
-            if (command == null) {
+            if (command != null) {
                 command.execute(commandArgs);
             } else {
                 System.out.println("Bad command. Try again or use help.");
