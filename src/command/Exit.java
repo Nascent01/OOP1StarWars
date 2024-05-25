@@ -4,17 +4,17 @@ import cli.Command;
 import universe.Universe;
 
 public class Exit implements Command {
+
     @Override
     public void execute(String[] args) throws Exception {
-        if (Universe.getInstance().isFileOpened()) {
-            System.out.println("Exiting the app");
-            System.exit(0);
+        if (!Universe.getInstance().isFileOpened()) {
+            System.out.println("Open file first!");
+        } else if (args.length != 1) {
+            System.out.println("Usage: exit the app");
         } else {
-            if (args.length != 1) {
-                System.out.println("The command is exit");
-            } else {
-                System.out.println("No file is opened");
-            }
+            System.out.println("Exiting the app...");
+            System.out.println("May the force be with you!");
+            System.exit(0);
         }
     }
 }

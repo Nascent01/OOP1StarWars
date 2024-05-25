@@ -7,16 +7,15 @@ public class Close implements Command {
 
     @Override
     public void execute(String[] args) throws Exception {
-        if (Universe.getInstance().isFileOpened()) {
-            Universe.getInstance().setFileOpened(false);
+        if (!Universe.getInstance().isFileOpened()) {
+            System.out.println("Open file first!");
+        } else if (args.length != 1) {
+            System.out.println("Usage: close file");
+        } else {
             Universe.getInstance().getPlanets().clear();
             Universe.getInstance().getJediPopulation().clear();
-        } else {
-            if (args.length != 1) {
-                System.out.println("The command is exit");
-            } else {
-                System.out.println("No FILE IS OPENED");
-            }
+            Universe.getInstance().setFileOpened(false);
+            System.out.println("Closing file...");
         }
     }
 }

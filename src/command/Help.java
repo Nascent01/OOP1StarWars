@@ -4,14 +4,13 @@ import cli.Command;
 import universe.Universe;
 
 public class Help implements Command {
+
     @Override
     public void execute(String[] args) {
         if (!Universe.getInstance().isFileOpened()) {
-            System.out.println("No file is open");
-            return;
-        }
-        if (args.length != 1) {
-            System.out.println("The command is Help");
+            System.out.println("Open file first!");
+        } else if (args.length != 1) {
+            System.out.println("Usage: print all commands");
         } else {
             System.out.println("The following commands are supported:"
                     + "\nopen <file> opens <file>"
