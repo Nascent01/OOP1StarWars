@@ -5,6 +5,8 @@ import command.*;
 public abstract class CommandFactory {
     public static Command receiveCommand(String command) {
         switch (command.toLowerCase()) {
+            case "add_planet":
+                return new AddPlanet();
             case "open":
                 return new Open();
             case "save":
