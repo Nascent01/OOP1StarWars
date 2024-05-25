@@ -20,7 +20,7 @@ public class Save implements Command {
             Universe universe = Universe.getInstance();
             XmlWrite xmlWrite = new XmlWrite();
             xmlWrite.writeXmlFile(universe, universe.getFileName());
-            System.out.println("Saved " + universe.getFileName() + " to " + universe.getFileName());
+            System.out.println("Saved the changes to " + universe.getFileName());
         }
     }
 }
