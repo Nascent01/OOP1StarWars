@@ -9,7 +9,7 @@ public class Help implements Command {
     public void execute(String[] args) {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("Open file first!");
-        } else if (args.length != 1) {
+        } else if (args.length != 0) {
             System.out.println("Usage: print all commands");
         } else {
             System.out.println("The following commands are supported:"

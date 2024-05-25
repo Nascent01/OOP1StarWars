@@ -28,9 +28,9 @@ public class Universe {
 
     public void readFromXml(String fileName) {
         this.fileName = fileName;
-        System.out.println(fileName);
         XmlRead xmlRead = new XmlRead();
         xmlRead.readXmlFile(fileName);
+        System.out.println("File successfully opened: " + fileName);
         isFileOpened = true;
     }
 

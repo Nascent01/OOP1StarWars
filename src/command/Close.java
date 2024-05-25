@@ -16,6 +16,7 @@ public class Close implements Command {
             Universe.getInstance().getJediPopulation().clear();
             Universe.getInstance().setFileOpened(false);
             System.out.println("Closing file...");
+            System.out.println("File closed!");
         }
     }
 }
