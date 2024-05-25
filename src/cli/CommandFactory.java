@@ -23,10 +23,14 @@ public abstract class CommandFactory {
                 return new SaveAs();
             case "help":
                 return new Help();
+            case "planet_name":
+                return new PlanetName();
             case "close":
                 return new Close();
             case "exit":
                 return new Exit();
+            case "promote_jedi":
+                return new PromoteJedi();
             case "get_most_used_saber_color":
                 return new GetMostUsedSaberColor();
             case "print":

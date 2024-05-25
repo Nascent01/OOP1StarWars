@@ -49,7 +49,7 @@ public class PlanetManager {
         String planetName = args[0];
         String planetName2 = args[1];
         List<Jedi> jedis = JediManager.getAllJediByPlanet(planetName);
-        List<Jedi> jedis2 = JediManager.getAllJediByPlanet(planetName);
+        List<Jedi> jedis2 = JediManager.getAllJediByPlanet(planetName2);
         jedis.addAll(jedis2);
         List<Jedi> jedis3 = jedis.stream().sorted(Comparator.comparing(Jedi::getName)).collect(Collectors.toList());
         getJediInfo(jedis3);
