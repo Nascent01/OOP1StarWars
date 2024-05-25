@@ -1,7 +1,9 @@
 package planet;
 
 import jedi.Jedi;
+import jedi.JediHelper;
 import universe.Universe;
+import jedi.JediManager;
 
 import java.util.Comparator;
 import java.util.HashSet;
@@ -50,15 +52,15 @@ public class PlanetManager {
         List<Jedi> jedis2 = JediManager.getAllJediByPlanet(planetName);
         jedis.addAll(jedis2);
         List<Jedi> jedis3 = jedis.stream().sorted(Comparator.comparing(Jedi::getName)).collect(Collectors.toList());
-        getJedInfo(jedis3);
+        getJediInfo(jedis3);
     }
 
     public static void getJediInfo(List<Jedi> jedis3) {
         for (Jedi jedi: jedis3) {
             System.out.println("Jedi Name: " + jedi.getName());
             System.out.println("Jedi Age: " + jedi.getAge());
-            System.out.println("Jedi Rank:" + jediGetRank().getName());
-            System.out.println("Jedi Strength:" + jedi.getStremgth());
+            System.out.println("Jedi Rank:" + jedi.getRank().getRankName());
+            System.out.println("Jedi Strength:" + jedi.getStrength());
         }
     }
 }
