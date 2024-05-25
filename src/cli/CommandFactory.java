@@ -13,6 +13,8 @@ public abstract class CommandFactory {
                 return new DemoteJedi();
             case "get_strongest_jedi":
                 return new GetStrongestJedi();
+            case "get_youngest_jedi":
+                return new GetYoungestJedi();
             case "open":
                 return new Open();
             case "save":

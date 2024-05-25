@@ -59,8 +59,8 @@ public class PlanetManager {
         for (Jedi jedi: jedis3) {
             System.out.println("Jedi Name: " + jedi.getName());
             System.out.println("Jedi Age: " + jedi.getAge());
-            System.out.println("Jedi Rank:" + jedi.getRank().getRankName());
-            System.out.println("Jedi Strength:" + jedi.getStrength());
+            System.out.println("Jedi Rank: " + jedi.getRank().getRankName());
+            System.out.println("Jedi Strength: " + jedi.getStrength());
         }
     }
 }
