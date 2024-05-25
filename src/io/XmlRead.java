@@ -30,7 +30,6 @@ public class XmlRead {
                 xmlWrite.writeXmlFile(universe, fileName);
                 System.out.println("New file created: " + fileName);
             } else {
-                System.out.println(inputFile);
                 DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
                 DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
                 Document doc = dBuilder.parse(inputFile);
