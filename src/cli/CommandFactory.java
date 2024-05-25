@@ -9,6 +9,8 @@ public abstract class CommandFactory {
                 return new AddPlanet();
             case "create_jedi":
                 return new CreateJedi();
+            case "demote_jedi":
+                return new DemoteJedi();
             case "open":
                 return new Open();
             case "save":
@@ -21,8 +23,9 @@ public abstract class CommandFactory {
                 return new Close();
             case "exit":
                 return new Exit();
+            case "print":
+                return new Print();
         }
-
         return null;
     }
 }
