@@ -4,7 +4,6 @@ import cli.Command;
 import io.XmlWrite;
 import universe.Universe;
 
-import javax.sql.rowset.spi.XmlReader;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.IOException;
