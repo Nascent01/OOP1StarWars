@@ -11,7 +11,7 @@ public class Print implements Command {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("Open file first!");
         } else if (args.length != 1) {
-            System.out.println("The commands are Print <planet_name>, Print jedi_name>");
+            System.out.println("Usage: print <planet_name>, print jedi_name>");
         } else {
             PlanetManager.printInfo(args);
         }

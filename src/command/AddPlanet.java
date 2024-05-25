@@ -11,7 +11,7 @@ public class AddPlanet implements Command {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("Open file first!");
         } else if (args.length != 1) {
-            System.out.println("Usage: <add_plant> name");
+            System.out.println("Usage: add_plant <planet_name>");
         } else {
             PlanetManager.addPlanet(args);
         }

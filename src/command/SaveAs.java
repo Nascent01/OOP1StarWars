@@ -9,7 +9,7 @@ public class SaveAs implements Command {
     public void execute(String[] args) throws Exception {
         if (Universe.getInstance().isFileOpened()) {
             if (args.length != 1) {
-                System.out.println("Invalid number of arguments");
+                System.out.println("Usage: saveas <filename>");
             } else {
                 String fileName = args[0];
                 XmlWrite xmlWrite = new XmlWrite();

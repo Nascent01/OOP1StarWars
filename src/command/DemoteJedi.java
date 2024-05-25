@@ -12,7 +12,7 @@ public class DemoteJedi implements Command {
         {
             System.out.println("Open file first!");
         } else if (args.length != 2) {
-            System.out.println("It's demote_jedi <jedi_name> <multiplier>");
+            System.out.println("Usage: demote_jedi <jedi_name> <multiplier>");
         } else {
             JediManager.demoteJedi(args);
         }
