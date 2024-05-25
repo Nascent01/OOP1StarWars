@@ -4,46 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3758295-e5fb-4c58-a989-8a7b0ffcbafd" name="Changes" comment="Create Project OOP1Star Wars" />
+    <list default="true" id="b3758295-e5fb-4c58-a989-8a7b0ffcbafd" name="Changes" comment="Add case for promoting jedi and create class PromoteJedi, add case for planet_name and create class PlanetName and fix PlanetManager error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cli/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli/CommandFactory.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nascent01/OOP1StarWars.git",
-    "accountId": "f443b119-ab9c-4140-96d6-abb32d8d74a7"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nascent01&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nascent01/OOP1StarWars.git&quot;,
+    &quot;accountId&quot;: &quot;f443b119-ab9c-4140-96d6-abb32d8d74a7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2guzl4mbD8A0XraphtD08fRozVQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/java projects/OOP1StarWars/src/Main.java",
-    "settings.editor.selected.configurable": "project.scopes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Shell.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/java projects/OOP1StarWars/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -60,7 +79,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716562399127</updated>
-      <workItem from="1716562400291" duration="923000" />
+      <workItem from="1716562400291" duration="7507000" />
+      <workItem from="1716615361367" duration="12270000" />
+      <workItem from="1716644430503" duration="2996000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project OOP1Star Wars">
       <option name="closed" value="true" />
@@ -70,14 +91,342 @@
       <option name="project" value="LOCAL" />
       <updated>1716562655066</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor default main class into shell and add functionality for accepting user input">
+      <option name="closed" value="true" />
+      <created>1716567716869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716567716869</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1716567778136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716567778136</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Create interface Command with execute method">
+      <option name="closed" value="true" />
+      <created>1716567831725</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716567831725</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Create abstract class CommandFactory with static method receiveCommand and switch case with all available commands">
+      <option name="closed" value="true" />
+      <created>1716568199229</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568199229</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create Planet model">
+      <option name="closed" value="true" />
+      <created>1716568285472</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568285472</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create Universe model">
+      <option name="closed" value="true" />
+      <created>1716568320782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568320782</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create Jedi model">
+      <option name="closed" value="true" />
+      <created>1716568336117</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568336117</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create enum with jedi's lightsaber colors">
+      <option name="closed" value="true" />
+      <created>1716568388900</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568388900</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Create JediManager class">
+      <option name="closed" value="true" />
+      <created>1716568424006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568424006</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Create PlanetManager Class">
+      <option name="closed" value="true" />
+      <created>1716568437331</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716568437331</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Create xml file to use as a prototype">
+      <option name="closed" value="true" />
+      <created>1716569915093</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716569915093</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create Exit class implementing Command interface">
+      <option name="closed" value="true" />
+      <created>1716569946345</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716569946345</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Create Save class implementing Command interface">
+      <option name="closed" value="true" />
+      <created>1716569961215</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716569961215</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Create Saveas class implementing Command interface">
+      <option name="closed" value="true" />
+      <created>1716569970155</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716569970155</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add more case handling in CommandFactory class">
+      <option name="closed" value="true" />
+      <created>1716621571455</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716621571455</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Change logic of command to handle empty inputs and more than needed length args">
+      <option name="closed" value="true" />
+      <created>1716621862471</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716621862471</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Import missing files and methods in PlanetManager and Universe classes">
+      <option name="closed" value="true" />
+      <created>1716621915843</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716621915843</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix Shell error&#10;executing only commands equal to null">
+      <option name="closed" value="true" />
+      <created>1716622013556</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716622013556</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add methods for removing, demoting, promoting, getStrongest, getYoungest, printInfo, getAllByPlanet, getMostUsedSaberColor, getMostUsedSaberColorWithRank jedis in JediManager">
+      <option name="closed" value="true" />
+      <created>1716622123833</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716622123833</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Create XmlRead and XmlWrite for handling read and write functionality with xml files">
+      <option name="closed" value="true" />
+      <created>1716622177761</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716622177761</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Create JediHelper class">
+      <option name="closed" value="true" />
+      <created>1716622218060</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716622218060</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fix save command error in logic">
+      <option name="closed" value="true" />
+      <created>1716623216900</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716623216900</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add new case for adding a planet and create AddPlanet class">
+      <option name="closed" value="true" />
+      <created>1716623281573</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716623281573</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Remove unused logic">
+      <option name="closed" value="true" />
+      <created>1716623308841</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716623308841</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Change text after successful save">
+      <option name="closed" value="true" />
+      <created>1716623844815</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716623844815</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add handling for empty file name">
+      <option name="closed" value="true" />
+      <created>1716625196727</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716625196727</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add message for creatJedi command to show if jedi was created successfully">
+      <option name="closed" value="true" />
+      <created>1716625306173</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716625306173</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add case for creating_jedi and create class CreateJedi">
+      <option name="closed" value="true" />
+      <created>1716625473306</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716625473306</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Remove debugging line from XmlRead">
+      <option name="closed" value="true" />
+      <created>1716625570312</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716625570312</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add commands for printing planet and jedi info, demoting jedi and create classes Print and DemoteJedi">
+      <option name="closed" value="true" />
+      <created>1716628139147</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716628139147</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Fix bug in shell with empty string">
+      <option name="closed" value="true" />
+      <created>1716628156741</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716628156741</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add new case for get_most_used_saber_color create class GetMostUsedSaberColor and fix displaying of result in JediManager">
+      <option name="closed" value="true" />
+      <created>1716645122555</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716645122555</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Change invalid number argument message on all classes to be consistent">
+      <option name="closed" value="true" />
+      <created>1716645700797</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716645700797</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Refactor JediManager class">
+      <option name="closed" value="true" />
+      <created>1716645952312</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1716645952312</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Improve command Close - wrong number of arguments handling message">
+      <option name="closed" value="true" />
+      <created>1716645995463</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1716645995463</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add case for get_strongest_jedi in CommandFactory and create class GetStrongestJedi">
+      <option name="closed" value="true" />
+      <created>1716646126776</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716646126776</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add cas for getting youngest jedi from a planet and create GetYoungestJedi class, refactor PlanetManager class">
+      <option name="closed" value="true" />
+      <created>1716646484735</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716646484735</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add case for promoting jedi and create class PromoteJedi, add case for planet_name and create class PlanetName and fix PlanetManager error">
+      <option name="closed" value="true" />
+      <created>1716647293854</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716647293854</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Project OOP1Star Wars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Project OOP1Star Wars" />
+    <MESSAGE value="Create Saveas class implementing Command interface" />
+    <MESSAGE value="Add more case handling in CommandFactory class" />
+    <MESSAGE value="Change logic of command to handle empty inputs and more than needed length args" />
+    <MESSAGE value="Import missing files and methods in PlanetManager and Universe classes" />
+    <MESSAGE value="Fix Shell error&#10;executing only commands equal to null" />
+    <MESSAGE value="Add methods for removing, demoting, promoting, getStrongest, getYoungest, printInfo, getAllByPlanet, getMostUsedSaberColor, getMostUsedSaberColorWithRank jedis in JediManager" />
+    <MESSAGE value="Create XmlRead and XmlWrite for handling read and write functionality with xml files" />
+    <MESSAGE value="Create JediHelper class" />
+    <MESSAGE value="Fix save command error in logic" />
+    <MESSAGE value="Add new case for adding a planet and create AddPlanet class" />
+    <MESSAGE value="Remove unused logic" />
+    <MESSAGE value="Change text after successful save" />
+    <MESSAGE value="Add handling for empty file name" />
+    <MESSAGE value="Add message for creatJedi command to show if jedi was created successfully" />
+    <MESSAGE value="Add case for creating_jedi and create class CreateJedi" />
+    <MESSAGE value="Remove debugging line from XmlRead" />
+    <MESSAGE value="Add commands for printing planet and jedi info, demoting jedi and create classes Print and DemoteJedi" />
+    <MESSAGE value="Fix bug in shell with empty string" />
+    <MESSAGE value="Add new case for get_most_used_saber_color create class GetMostUsedSaberColor and fix displaying of result in JediManager" />
+    <MESSAGE value="Change invalid number argument message on all classes to be consistent" />
+    <MESSAGE value="Refactor JediManager class" />
+    <MESSAGE value="Improve command Close - wrong number of arguments handling message" />
+    <MESSAGE value="Add case for get_strongest_jedi in CommandFactory and create class GetStrongestJedi" />
+    <MESSAGE value="Add cas for getting youngest jedi from a planet and create GetYoungestJedi class, refactor PlanetManager class" />
+    <MESSAGE value="Add case for promoting jedi and create class PromoteJedi, add case for planet_name and create class PlanetName and fix PlanetManager error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add case for promoting jedi and create class PromoteJedi, add case for planet_name and create class PlanetName and fix PlanetManager error" />
   </component>
 </project>
