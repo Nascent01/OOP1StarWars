@@ -21,7 +21,7 @@ public class Shell {
             String[] commandArgs = new String[splitInput.length - 1];
             System.arraycopy(splitInput, 1, commandArgs, 0, commandArgs.length);
             if (commandArgs.length == 0) {
-                commandArgs = new String[]{""};
+                commandArgs = new String[]{};
             }
             Command command = CommandFactory.receiveCommand(commandName);
             if (command != null) {
