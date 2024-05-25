@@ -12,7 +12,11 @@ public class Open implements Command {
         } else if (args.length != 1) {
             System.out.println("Usage: open <file.xml>");
         } else {
-            Universe.getInstance().readFromXml(args[0]);
+            if (!args[0].isEmpty()) {
+                Universe.getInstance().readFromXml(args[0]);
+            } else {
+                System.out.println("You have to write file name");
+            }
         }
     }
 }
