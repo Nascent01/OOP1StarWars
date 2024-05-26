@@ -4,8 +4,6 @@ import cli.Command;
 import planet.PlanetManager;
 import universe.Universe;
 
-import java.util.Arrays;
-
 public class PlanetName implements Command {
 
     @Override
