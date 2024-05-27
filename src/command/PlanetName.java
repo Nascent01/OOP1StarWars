@@ -11,7 +11,7 @@ public class PlanetName implements Command {
         if (!Universe.getInstance().isFileOpened()) {
             System.out.println("Open file first!");
         } else if (args.length != 2) {
-            System.out.println("Usage: <planet_name> <planet_name> ");
+            System.out.println("Usage: planet_name <planet_name> <planet_name> ");
         } else {
             PlanetManager.getJediInhabitantsInPlanets(args);
         }
